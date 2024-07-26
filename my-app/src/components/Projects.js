@@ -1,6 +1,9 @@
 import { Col, Container, Tab, Row, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import colorSharp2 from "../assets/img/color-sharp2.png"
+import colorSharp2 from "../assets/img/color-sharp2.png";
+import projImg1 from "../assets/img/project-img1.png";
+import projImg2 from "../assets/img/project-img2.png";
+import projImg3 from "../assets/img/project-img3.png";
 
 export const Projects = () => {
 
@@ -23,17 +26,17 @@ export const Projects = () => {
     {
       title: "Business Startup",
       description: "Design & Development",
-      imgUrl: projImg4,
+      imgUrl: projImg1,
     },
     {
       title: "Business Startup",
       description: "Design & Development",
-      imgUrl: projImg5,
+      imgUrl: projImg2,
     },
     {
       title: "Business Startup",
       description: "Design & Development",
-      imgUrl: projImg6,
+      imgUrl: projImg3,
     },
   ];
 
@@ -46,7 +49,7 @@ export const Projects = () => {
             <h2>Projects</h2>
             <p>Lorem gerg ergerg ergerg ergerg rgerger gerg rgergerg rgqergerg</p>
             <Tab.Container id="projects-tabs" defaultActiveKey="first">
-              <Nav variant="pills" className="flex-row">
+              <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                 <Nav.Item>
                   <Nav.Link eventKey="first">Tab One</Nav.Link>
                 </Nav.Item>
