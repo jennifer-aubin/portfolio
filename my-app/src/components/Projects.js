@@ -1,9 +1,11 @@
 import { Col, Container, Tab, Row, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import colorSharp2 from "../assets/img/color-sharp2.png";
+import colorSharp2 from "../assets/img/colorbleu1.png";
 import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
+import 'animate.css';
+import TrackVisibility from 'react-on-screen';
 
 export const Projects = () => {
 
@@ -45,7 +47,10 @@ export const Projects = () => {
     <section className="project" id="project">
       <Container>
         <Row>
-          <Col>
+          <Col size={12}>
+          <TrackVisibility>
+            {({ isVisible }) =>
+              <div className={isVisible ? "animate__animated animate__bounce" : ""}>
             <h2>Projects</h2>
             <p>Lorem gerg ergerg ergerg ergerg rgerger gerg rgergerg rgqergerg</p>
             <Tab.Container id="projects-tabs" defaultActiveKey="first">
@@ -66,12 +71,14 @@ export const Projects = () => {
                     {projects.map((project, index) => (
                       <ProjectCard key={index} {...project} />
                     ))}
-                  </Row>
-                </Tab.Pane>
-                <Tab.Pane eventKey="second">Lorem ipsum</Tab.Pane>
-                <Tab.Pane eventKey="third">Lorem ipsum</Tab.Pane>
-              </Tab.Content>
-            </Tab.Container>
+                    </Row>
+                  </Tab.Pane>
+                  <Tab.Pane eventKey="second">Lorem ipsum</Tab.Pane>
+                  <Tab.Pane eventKey="third">Lorem ipsum</Tab.Pane>
+                </Tab.Content>
+              </Tab.Container>
+            </div>}
+            </TrackVisibility>
           </Col>
         </Row>
       </Container>
