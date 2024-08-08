@@ -83,7 +83,7 @@ p.danger {
 }
 /************ Navbar Css ************/
 nav.navbar {
-  padding: 18px 0;
+  padding: 18px ;
   position: fixed;
   width: 100%;
   top: 0;
@@ -99,12 +99,12 @@ nav.navbar a.navbar-brand {
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
-  color: #fff !important;
+  color: #F94C10 !important;
   letter-spacing: 0.8px;
   padding: 0 25px;
   font-size: 18px;
   opacity: 0.75;
-  font-size: 35px;
+  font-size: 25px;
 }
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
@@ -128,14 +128,14 @@ span.navbar-text {
     align-items: center;
     justify-content: center;
     line-height: 1;
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    border: 2px solid #F94C10;
 }
 .social-icon a::before {
     content: "";
     width: 42px;
     height: 42px;
     position: absolute;
-    background-color: #ffffff;
+    background-color: #F94C10;
     border-radius: 50%;
     transform: scale(0);
 	transition: 0.3s ease-in-out;
@@ -153,7 +153,7 @@ span.navbar-text {
 }
 .navbar-text button {
   font-weight: 700;
-  color: #fff;
+  color: #F94C10;
   border: 1px solid #fff;
   padding: 18px 34px;
   font-size: 18px;
@@ -170,7 +170,7 @@ span.navbar-text {
   width: 0%;
   height: 100%;
   position: absolute;
-  background-color: #fff;
+  background-color: #F94C10;
   left: 0;
   top: 0;
   z-index: -1;
@@ -232,13 +232,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 /************ Banner Css ************/
 .logo {
-  width: 150px;
+  width: &ààpx;
 }
 
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
-  background-image: url('./assets/img/pngwing.com\ \(11\).png');
+  background-image: url('./assets/img/colorbleu1.png');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -248,7 +248,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.8px;
   padding: 8px 10px;
   background: linear-gradient(90.21deg, rgba(12, 12, 12, 0.5) -5.91%, rgba(5, 5, 5, 0.5) 111.58%);
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: 1px solid #F94C10;
   font-size: 20px;
   margin-bottom: 16px;
   display: inline-block;
@@ -307,23 +307,23 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .skill {
   padding: 0 0 50px 0;
   position: relative;
+  background-image: url('./assets/img/colorbleu1.png');;
 }
 
 .skill-bx {
-  background: #151515;
-  border-radius: 64px;
-  text-align: center;
-  padding: 60px 50px;
-  margin-top: -60px;
+
+  padding: 30px 50px;
+
 }
 
 .skill h2 {
   font-size: 45px;
   font-weight: 700;
+  color: #F94C10;
 }
 
 .skill p {
-  color: #B8B8B8;
+  color: #3a9423;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
@@ -336,20 +336,54 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
 }
 
-.skill-slider .item img {
-  width: 50%;
-  margin: 0 auto 15px auto;
+.card-container {
+  display: flex;
+  justify-content: center;  /* Centre les cartes horizontalement */
+  align-items: center;      /* Centre les cartes verticalement */
+  gap: 1rem;                /* Espace entre les cartes */
+  flex-wrap: wrap;          /* Permet aux cartes de passer à la ligne si nécessaire */
+  height: 100vh;
+
 }
 
-.background-image-left {
-  position: absolute;
-  top: 10%;   /* Adjust the top offset as needed */
-  left: 10%;  /* Adjust the left offset as needed */
-  width: 80%;  /* 80% of the container's width */
-  height: 80%; /* 80% of the container's height */
-  z-index: -4;
-  object-fit: cover; /* This ensures the image covers the defined area */
+.card-item {
+  width: 18rem;
+  box-shadow: rgba(32, 32, 184, 0.25) 0px 30px 60px -12px inset, rgba(201, 21, 21, 0.3) 0px 18px 36px -18px inset; /* Ombre intérieure */             /* Largeur fixe pour les cartes */
 }
+
+.skill-text {
+  padding: 25px;
+  font-size: 3rem;
+  text-shadow: 4px 4px 6px #F94C10;
+  border-top: 4px solid #0f97af; /* Ligne au-dessus du texte */
+  margin-top: 20px;
+}
+
+.card-body {
+  background-color: #121212e7;
+
+
+}
+
+.card, .card-body {
+  border: none !important;
+  border-radius: 2%;      /* Supprime les bordures, même celles appliquées par Bootstrap */
+}
+
+.card-1 {
+  box-shadow: rgba(255, 114, 0, 0.88) -5px 5px, rgba(255, 114, 0, 0.63) -10px 10px, rgba(255, 114, 0, 0.37) -15px 15px, rgba(231, 165, 99, 0.575) -20px 20px, rgb(247, 207, 175) -25px 25px;
+}
+
+.card-2 {
+  box-shadow: rgba(255, 114, 0, 0.88) 0px 5px, rgba(255, 114, 0, 0.63) 0px 10px, rgba(255, 114, 0, 0.37) 0px 15px, rgba(231, 165, 99, 0.575) 0px 20px, rgb(247, 207, 175) 0px 25px;
+}
+
+.card-3 {
+  box-shadow: rgba(255, 114, 0, 0.88) 5px 5px, rgba(255, 114, 0, 0.63) 10px 10px, rgba(255, 114, 0, 0.37) 15px 15px, rgba(231, 165, 99, 0.575) 20px 20px, rgb(247, 207, 175) 25px 25px;
+}
+
+
+
 
 
 

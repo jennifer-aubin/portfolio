@@ -1,9 +1,7 @@
-import { Container, Col, Row } from "react-bootstrap";
-import Carousel from "react-multi-carousel";
+import { Container, Col, Row, Card} from "react-bootstrap";
+
 import "react-multi-carousel/lib/styles.css";
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
+
 import colorSharp from "../assets/img/colorbleu1.png"
 
 export const Skills = () => {
@@ -30,35 +28,44 @@ export const Skills = () => {
   return (
     <section className="skill" id="skills">
       <Container>
-        <Row>
-          <Col>
-          <div className="skill-bx"/>
-            <h2>
-              Skills
-            </h2>
-            <p>lorem efzef efzefz ffz'efzef eeee zfZEFZ.<br></br>rgggg feeeee zzzz aaaaa yyyyy iiiiii</p>
-            <Carousel responsive={responsive} infinite={true} className="skill-slider">
-              <div className="item">
-                <img src={meter1} alt="1"/>
-                <h5>Web Development</h5>
-              </div>
-              <div className="item">
-                <img src={meter2} alt="1"/>
-                <h5>Brand Identity</h5>
-              </div>
-              <div className="item">
-                <img src={meter3} alt="1"/>
-                <h5>Logo Design</h5>
-              </div>
-              <div className="item">
-                <img src={meter1} alt="1"/>
-                <h5>Web Development</h5>
-              </div>
-            </Carousel>
+        <div className="skill-text">Skills</div>
+        <Row className="justify-content-center">
+          <Col md="auto">
+            <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center' }}>
+              <Card style={{ width: '18rem' }}>
+                <Card.Body className="card-1">
+                  <Card.Title>Card Title</Card.Title>
+                  <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
+                  <Card.Text>
+                    Some quick example text to build on the card title and make up the
+                    bulk of the card's content.
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+              <Card style={{ width: '18rem' }}>
+                <Card.Body className="card-2">
+                  <Card.Title>Card Title</Card.Title>
+                  <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
+                  <Card.Text>
+                    Some quick example text to build on the card title and make up the
+                    bulk of the card's content.
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+              <Card style={{ width: '18rem' }}>
+                <Card.Body className="card-3">
+                  <Card.Title>Card Title</Card.Title>
+                  <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
+                  <Card.Text>
+                    Some quick example text to build on the card title and make up the
+                    bulk of the card's content.
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </div>
           </Col>
         </Row>
       </Container>
-      <img className="background-image-left" src={colorSharp} alt="1"/>
     </section>
-  )
+  );
 }

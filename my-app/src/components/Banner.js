@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from 'react-bootstrap';
 import { ArrowRightCircle } from 'react-bootstrap-icons';
-import headerImg from "../assets/img/pngwing.com .png";
+import headerImg from "../assets/img/rondblanc.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -9,7 +9,7 @@ import TrackVisibility from 'react-on-screen';
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const toRotate = [ "Web Developer", "Web Designer", "UI/UX Designer" ];
+  const toRotate = [ "web developer portfolio." ];
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const period = 2000;
@@ -30,7 +30,9 @@ export const Banner = () => {
     setText(updatedText);
 
     if (isDeleting) {
-      setDelta(prevDelta => prevDelta /2)
+      setDelta(150);
+    } else {
+      setDelta(300 - Math.random() * 100);
     }
 
     if (!isDeleting && updatedText === fullText) {
@@ -51,10 +53,9 @@ export const Banner = () => {
             <TrackVisibility>
             {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Welcome to my portfolio</span>
-                <h1>{`Hi I'm webdecoded `}<span className="wrap">{text}</span></h1>
-                <p>Lorem fzerfgqez regqerg ggg zerfazre erg raqgergqezr rgqerg rgerg rggg ergqerg rgqer gqerg eqr gergqe rgqergqer gr</p>
-                <button onClick={() => console.log('connect')}>Lest's connect <ArrowRightCircle size={25}/></button>
+                <span className="tagline">Discover My Work !</span>
+                <h1>{`Welcome to my `}<span className="wrap">{text}</span></h1>
+                <p>Hello, I'm Jennifer, a web developer, and if you're here, it's to discover my work! If you like my work, you can contact me through the contact page.</p>
               </div>}
             </TrackVisibility>
           </Col>
