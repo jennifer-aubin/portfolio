@@ -307,7 +307,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .skill {
   padding: 0 0 50px 0;
   position: relative;
-  background-image: url('./assets/img/colorbleu1.png');;
+  margin-bottom: 10px;
+
 }
 
 .skill-bx {
@@ -355,12 +356,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 25px;
   font-size: 3rem;
   text-shadow: 4px 4px 6px #F94C10;
-  border-top: 4px solid #0f97af; /* Ligne au-dessus du texte */
-  margin-top: 20px;
+  width: 100%;
 }
 
 .card-body {
-  background-color: #121212e7;
+  background-color: #cecbcbe7;
 
 
 }
@@ -382,6 +382,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   box-shadow: rgba(255, 114, 0, 0.88) 5px 5px, rgba(255, 114, 0, 0.63) 10px 10px, rgba(255, 114, 0, 0.37) 15px 15px, rgba(231, 165, 99, 0.575) 20px 20px, rgb(247, 207, 175) 25px 25px;
 }
 
+.skill-line1,
+.skill-line2 {
+  width: 80%; /* Largeur égale pour les deux lignes */
+  max-width: 1200px; /* Largeur maximale pour les grands écrans */
+  height: 4px;
+  background-color: #F94C10;
+  margin: 50px auto 0 auto; /* Centre horizontalement avec un espacement au-dessus */
+}
+
+.skill-line2 {
+  margin-top: 100px; /* Ajuste l'espacement au-dessus pour la ligne du bas */
+}
 
 
 

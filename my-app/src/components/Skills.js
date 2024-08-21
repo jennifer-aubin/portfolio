@@ -28,6 +28,7 @@ export const Skills = () => {
   return (
     <section className="skill" id="skills">
       <Container>
+      <div className="skill-line1"></div>
         <div className="skill-text">Skills</div>
         <Row className="justify-content-center">
           <Col md="auto">
@@ -63,6 +64,7 @@ export const Skills = () => {
                 </Card.Body>
               </Card>
             </div>
+            <div className="skill-line2"></div>
           </Col>
         </Row>
       </Container>
