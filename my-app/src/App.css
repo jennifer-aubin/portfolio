@@ -236,12 +236,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .banner {
-  margin-top: 0;
-  padding: 260px 0 100px 0;
   background-image: url('./assets/img/colorbleu1.png');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .banner .tagline {
   font-weight: 700;
@@ -394,6 +396,69 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .skill-line2 {
   margin-top: 100px; /* Ajuste l'espacement au-dessus pour la ligne du bas */
 }
+
+.swiper-container {
+  max-width: 100%;   /* Empêche le carrousel de dépasser la largeur de son parent */
+  width: 80%;        /* Réduit la largeur globale du carrousel */
+  height: 400px;     /* Limite la hauteur du carrousel */
+  margin: 0 auto;    /* Centrer le carrousel horizontalement */
+}
+.swiper-slide {
+  width: 200px;      /* Ajuste la largeur des cartes */
+  height: 300px;     /* Ajuste la hauteur des cartes */
+  margin: 0 auto;    /* Centrer chaque carte */
+  box-sizing: border-box;
+}
+
+
+
+.cardstyle {
+  width: 250px; /* Ajustez la largeur des cartes */
+  height: 350px; /* Ajustez la hauteur des cartes si nécessaire */
+  padding: 1rem; /* Ajustez le padding pour le contenu */
+  box-shadow: none !important; /* Ajouter une ombre pour améliorer la visibilité */
+  border-radius: 8px; /* Coins arrondis pour un meilleur look */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-sizing: border-box; /* Assurez-vous que les paddings et les bordures sont inclus dans les dimensions */
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.Cardcard {
+    width: 100%;        /* S'adapte à la taille de la diapositive */
+    height: auto;       /* Ajuste la hauteur automatiquement selon le contenu */
+    max-height: 100%;
+    box-shadow: none !important;  /* Empêche la carte de dépasser la taille de la diapositive */
+  }
+
+.swiper-container {
+  max-width: 100%;  /* Ajustez selon vos besoins */
+  max-height: 100px; /* Ajustez selon vos besoins */
+  width: auto;       /* Assurez-vous que le slider prend automatiquement la taille de son contenu */
+  height: auto;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  width: 40px;       /* Ajustez la largeur des flèches */
+  height: 40px;      /* Ajustez la hauteur des flèches */
+  background-color: rgba(0, 0, 0, 0.5); /* Couleur de fond semi-transparente */
+  background-size: 20px 20px; /* Taille des icônes dans les flèches */
+  background-repeat: no-repeat;
+  background-position: center; /* Centre les icônes dans les flèches */
+}
+
+.swiper-button-next {
+  right: 5px;       /* Distance de la flèche droite par rapport au bord du conteneur */
+}
+
+.swiper-button-prev {
+  left: 10px;        /* Distance de la flèche gauche par rapport au bord du conteneur */
+}
+
 
 
 
