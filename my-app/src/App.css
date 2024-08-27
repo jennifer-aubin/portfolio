@@ -231,9 +231,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	border-color: transparent;
 }
 /************ Banner Css ************/
-.logo {
-  width: &ààpx;
-}
+
 
 .banner {
   background-image: url('./assets/img/colorbleu1.png');
@@ -306,37 +304,21 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /* Skills */
+/* Skill.css */
+
 .skill {
-  padding: 0 0 50px 0;
-  position: relative;
-  margin-bottom: 10px;
-
+  border: 2px solid  #F94C10; /* Cadre orange de 4 pixels d'épaisseur */
+  padding: 10px; /* Espace interne pour éloigner le contenu des bords */
+  border-radius: 20px; /* Bords arrondis pour un look plus agréable */
+  margin: 20px auto; /* Espace autour de la section */
+  width: 95%;
 }
 
-.skill-bx {
-
-  padding: 30px 50px;
-
-}
-
-.skill h2 {
-  font-size: 45px;
-  font-weight: 700;
-  color: #F94C10;
-}
-
-.skill p {
-  color: #3a9423;
-  font-size: 18px;
-  letter-spacing: 0.8px;
-  line-height: 1.5em;
-  margin: 14px 0 75px 0;
-}
-
-.skill-slider {
-  width: 80%;
-  margin: 0 auto;
-  position: relative;
+.skill-text {
+  text-align: center;
+  font-size: 2rem;
+  color: white; /* Vous pouvez ajuster la couleur du texte si nécessaire */
+  margin-bottom: 1rem;
 }
 
 .card-container {
@@ -360,106 +342,71 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-shadow: 4px 4px 6px #F94C10;
   width: 100%;
 }
+/* CardSkill.css */
 
-.card-body {
-  background-color: #cecbcbe7;
-
-
-}
-
-.card, .card-body {
-  border: none !important;
-  border-radius: 2%;      /* Supprime les bordures, même celles appliquées par Bootstrap */
-}
-
-.card-1 {
-  box-shadow: rgba(255, 114, 0, 0.88) -5px 5px, rgba(255, 114, 0, 0.63) -10px 10px, rgba(255, 114, 0, 0.37) -15px 15px, rgba(231, 165, 99, 0.575) -20px 20px, rgb(247, 207, 175) -25px 25px;
-}
-
-.card-2 {
-  box-shadow: rgba(255, 114, 0, 0.88) 0px 5px, rgba(255, 114, 0, 0.63) 0px 10px, rgba(255, 114, 0, 0.37) 0px 15px, rgba(231, 165, 99, 0.575) 0px 20px, rgb(247, 207, 175) 0px 25px;
-}
-
-.card-3 {
-  box-shadow: rgba(255, 114, 0, 0.88) 5px 5px, rgba(255, 114, 0, 0.63) 10px 10px, rgba(255, 114, 0, 0.37) 15px 15px, rgba(231, 165, 99, 0.575) 20px 20px, rgb(247, 207, 175) 25px 25px;
-}
-
-.skill-line1,
-.skill-line2 {
-  width: 80%; /* Largeur égale pour les deux lignes */
-  max-width: 1200px; /* Largeur maximale pour les grands écrans */
-  height: 4px;
-  background-color: #F94C10;
-  margin: 50px auto 0 auto; /* Centre horizontalement avec un espacement au-dessus */
-}
-
-.skill-line2 {
-  margin-top: 100px; /* Ajuste l'espacement au-dessus pour la ligne du bas */
-}
-
-.swiper-container {
-  max-width: 100%;   /* Empêche le carrousel de dépasser la largeur de son parent */
-  width: 80%;        /* Réduit la largeur globale du carrousel */
-  height: 400px;     /* Limite la hauteur du carrousel */
-  margin: 0 auto;    /* Centrer le carrousel horizontalement */
-}
-.swiper-slide {
-  width: 200px;      /* Ajuste la largeur des cartes */
-  height: 300px;     /* Ajuste la hauteur des cartes */
-  margin: 0 auto;    /* Centrer chaque carte */
-  box-sizing: border-box;
-}
-
-
-
-.cardstyle {
-  width: 250px; /* Ajustez la largeur des cartes */
-  height: 350px; /* Ajustez la hauteur des cartes si nécessaire */
-  padding: 1rem; /* Ajustez le padding pour le contenu */
-  box-shadow: none !important; /* Ajouter une ombre pour améliorer la visibilité */
-  border-radius: 8px; /* Coins arrondis pour un meilleur look */
+.card-skill-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  text-align: center;
-  box-sizing: border-box; /* Assurez-vous que les paddings et les bordures sont inclus dans les dimensions */
-  overflow: hidden;
-  margin: 0 auto;
+  gap: 1rem;
+  padding: 1rem;
 }
 
-.Cardcard {
-    width: 100%;        /* S'adapte à la taille de la diapositive */
-    height: auto;       /* Ajuste la hauteur automatiquement selon le contenu */
-    max-height: 100%;
-    box-shadow: none !important;  /* Empêche la carte de dépasser la taille de la diapositive */
-  }
-
-.swiper-container {
-  max-width: 100%;  /* Ajustez selon vos besoins */
-  max-height: 100px; /* Ajustez selon vos besoins */
-  width: auto;       /* Assurez-vous que le slider prend automatiquement la taille de son contenu */
-  height: auto;
+.custom-card {
+  background-color: #0969c8; /* Gris foncé pour la carte */
+  color: #9e1e1e; /* Texte blanc */
+  border: none; /* Enlever les bordures */
+  border-radius: 8px; /* Bords arrondis */
+  box-shadow: 0 4px 8px rgba(241, 241, 240, 0.2); /* Ombre subtile */
 }
 
-.swiper-button-next, .swiper-button-prev {
-  width: 40px;       /* Ajustez la largeur des flèches */
-  height: 40px;      /* Ajustez la hauteur des flèches */
-  background-color: rgba(0, 0, 0, 0.5); /* Couleur de fond semi-transparente */
-  background-size: 20px 20px; /* Taille des icônes dans les flèches */
-  background-repeat: no-repeat;
-  background-position: center; /* Centre les icônes dans les flèches */
+.card-text-list {
+  list-style-type: none; /* Enlève les puces */
+  padding-left: 0; /* Supprime l'espace à gauche */
+  margin: 0; /* Supprime la marge par défaut */
 }
 
-.swiper-button-next {
-  right: 5px;       /* Distance de la flèche droite par rapport au bord du conteneur */
+.card-text-item {
+  margin: 0.5rem 0; /* Espacement entre les éléments de la liste */
+  padding-left: 0; /* Assure qu'il n'y a pas d'espace supplémentaire */
 }
-
-.swiper-button-prev {
-  left: 10px;        /* Distance de la flèche gauche par rapport au bord du conteneur */
+.card-title {
+  font-weight: bold; /* Met en gras le titre */
+  font-size: 1.25rem; /* Augmente la taille du texte pour le titre */
+  color: #179cdf; /* Couleur orange pour le titre */
+  margin-bottom: 0.5rem; /* Marge inférieure pour espacer du reste du contenu */
 }
 
 
+
+
+/* CardSkill.css */
+
+.card-skill-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.card-skill-container .card {
+  background-color: #343a40; /* Gris foncé pour la carte */
+  color: #ffffff; /* Texte blanc */
+  width: 12rem;
+  margin: 0.5rem;
+  border: none; /* Enlever les bordures */
+  border-radius: 8px; /* Bords arrondis */
+  box-shadow: 0 4px 8px rgba(241, 241, 240, 0.93); /* Ombre blanche subtile */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Animation fluide */
+}
+
+.card-skill-container .card:hover {
+  transform: translateY(-10px); /* Augmentez l'élévation pour renforcer l'effet */
+  box-shadow: 0 8px 16px rgb(232, 228, 228); /* Ombre blanche plus forte au hover */
+}
+
+.card-title {
+  font-weight: bold;
+}
 
 
 
