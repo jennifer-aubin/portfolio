@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from 'react-bootstrap';
 import { ArrowRightCircle } from 'react-bootstrap-icons';
-import headerImg from "../assets/img/rondblanc.png";
+ // import headerImg from "../assets/img/rondblanc.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -47,20 +47,17 @@ export const Banner = () => {
 
   return (
     <section className="banner" id="home">
-      <Container>
-        <Row className="align-items-center">
+      <Container className="d-flex align-items-center justify-content-center vh-100">
+        <Row className="d-flex align-items-center justify-content-center w-100">
           <Col xs={12} md={6} xl={7}>
             <TrackVisibility>
             {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+              <div className={`centered-content ${isVisible ? "animate__animated animate__fadeIn" : ""}`}>
                 <span className="tagline">Discover My Work !</span>
                 <h1>{`Welcome to my `}<span className="wrap">{text}</span></h1>
                 <p>Hello, I'm Jennifer, a web developer, and if you're here, it's to discover my work! If you like my work, you can contact me through the contact page.</p>
               </div>}
             </TrackVisibility>
-          </Col>
-          <Col xs={12} md={6} xl={5}>
-            <img src={headerImg} alt="Headder Img"/>
           </Col>
         </Row>
       </Container>

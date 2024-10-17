@@ -89,6 +89,7 @@ nav.navbar {
   top: 0;
   z-index: 9999;
   transition:  0.32s ease-in-out;
+  margin-right: auto;
 }
 nav.navbar.scrolled {
   padding: 0px 0;
@@ -98,8 +99,8 @@ nav.navbar a.navbar-brand {
     width: 9%;
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
-  font-weight: 400;
-  color: #F94C10 !important;
+  font-weight: 540;
+  color: #FFF !important;
   letter-spacing: 0.8px;
   padding: 0 25px;
   font-size: 18px;
@@ -128,20 +129,23 @@ span.navbar-text {
     align-items: center;
     justify-content: center;
     line-height: 1;
-    border: 2px solid #F94C10;
+    border: 2px solid ;
 }
 .social-icon a::before {
     content: "";
     width: 42px;
     height: 42px;
     position: absolute;
-    background-color: #F94C10;
+    background-color: #dab1a3;
     border-radius: 50%;
     transform: scale(0);
 	transition: 0.3s ease-in-out;
 }
 .social-icon a:hover::before {
     transform: scale(1);
+}
+.vvd {
+  margin-right: 20px; /* Espace entre les icônes sociales et le bouton "Let's Connect" */
 }
 .social-icon a img {
 	width: 40%;
@@ -153,7 +157,7 @@ span.navbar-text {
 }
 .navbar-text button {
   font-weight: 700;
-  color: #F94C10;
+  color: #B8B8B8;
   border: 1px solid #fff;
   padding: 18px 34px;
   font-size: 18px;
@@ -170,7 +174,7 @@ span.navbar-text {
   width: 0%;
   height: 100%;
   position: absolute;
-  background-color: #F94C10;
+  background-color: #FFF;
   left: 0;
   top: 0;
   z-index: -1;
@@ -207,7 +211,7 @@ nav.navbar .navbar-toggler-icon:before {
 	width: 24px;
 	position: absolute;
 	height: 2px;
-	background-color: #fff;
+	background-color: #dab1a3;
 	top: 0;
 	left: 0;
 	content: '';
@@ -234,7 +238,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 
 .banner {
-  background-image: url('./assets/img/colorbleu1.png');
+  background-image: url('./assets/img/6.png');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -242,13 +246,23 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+}
+.centered-content {
+  max-width: 800px;
+  margin: 0 auto; 
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
 }
 .banner .tagline {
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
   background: linear-gradient(90.21deg, rgba(12, 12, 12, 0.5) -5.91%, rgba(5, 5, 5, 0.5) 111.58%);
-  border: 1px solid #F94C10;
+  border: 1px solid #dab1a3;
   font-size: 20px;
   margin-bottom: 16px;
   display: inline-block;
@@ -259,15 +273,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.8px;
   line-height: 1;
   margin-bottom: 20px;
-  display: block;
+  
 }
 .banner p {
-  color: #B8B8B8;
+  color: #FFF;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
   width: 96%;
 }
+
 .banner button {
   color: #fff;
   font-weight: 700;
@@ -304,14 +319,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /* Skills */
-/* Skill.css */
 
 .skill {
-  border: 2px solid  #F94C10; /* Cadre orange de 4 pixels d'épaisseur */
   padding: 10px; /* Espace interne pour éloigner le contenu des bords */
-  border-radius: 20px; /* Bords arrondis pour un look plus agréable */
   margin: 20px auto; /* Espace autour de la section */
-  width: 95%;
 }
 
 .skill-text {
@@ -333,7 +344,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .card-item {
   width: 18rem;
-  box-shadow: rgba(32, 32, 184, 0.25) 0px 30px 60px -12px inset, rgba(201, 21, 21, 0.3) 0px 18px 36px -18px inset; /* Ombre intérieure */             /* Largeur fixe pour les cartes */
+  height: 20rem;
+  box-shadow: rgba(32, 32, 184, 0.25) 0px 30px 60px -12px inset, rgba(201, 21, 21, 0.3) 0px 18px 36px -18px inset; /* Ombre intérieure */             
 }
 
 .skill-text {
@@ -389,9 +401,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .card-skill-container .card {
-  background-color: #343a40; /* Gris foncé pour la carte */
-  color: #ffffff; /* Texte blanc */
   width: 12rem;
+  height: 18rem;
+  background-color: #c09c85; /* Gris foncé pour la carte */
+  color: #ffffff; /* Texte blanc */
   margin: 0.5rem;
   border: none; /* Enlever les bordures */
   border-radius: 8px; /* Bords arrondis */

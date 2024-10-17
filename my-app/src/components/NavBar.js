@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import logo from '../assets/img/logojeny.png';
 import navIcon1 from '../assets/img/nav-icon1.svg';
-import navIcon2 from '../assets/img/nav-icon2.svg';
+import navIcon2 from '../assets/img/clip-icon.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
 
 export const NavBar = () => {
@@ -43,13 +43,15 @@ export const NavBar = () => {
               <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
               <Nav.Link href="#contact" className={activeLink === 'contact' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('contact')}>Contact</Nav.Link>
             </Nav>
-            <span className="navbar-text">
+            <span className="navbar-text d-flex align-items-center">
             <div className="social-icon">
-                <a href="#"><img src={navIcon1} alt="" /></a>
-                <a href="#"><img src={navIcon2} alt="" /></a>
+                <a href="https://www.linkedin.com/in/jennifer-a-28a9612b9" target="_blank" rel="noopener noreferrer"><img src={navIcon1} alt="" /></a>
+                <a href="/CV-AUBIN-JENNIFER.pdf" target="_blank" rel="noopener noreferrer"><img src={navIcon2} alt="" /></a>
                 <a href="#"><img src={navIcon3} alt="" /></a>
               </div>
+              <div className="ms-auto m-10">
               <button className="vvd" onClick={() => console.log('connect')}><span>Let's Connect</span></button>
+              </div>
             </span>
         </Navbar.Collapse>
       </Container>
