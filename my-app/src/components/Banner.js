@@ -6,6 +6,7 @@ import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
 
+
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -48,13 +49,17 @@ export const Banner = () => {
   return (
     <section className="banner" id="home">
       <Container>
-        
         <Row className=" align-items-center">
           <Col xs={12} md={6} xl={7}>
-            <span className="tagline">Discover My Work !</span>
-            <h1>{`Welcome to my `}<span className="wrap">{text}</span></h1>
-            <p>Hello, I'm Jennifer, a web developer, and if you're here, it's to discover my work! If you like my work, you can contact me through the contact page.</p>
-            <button onClick={() => console.log('connect')}>Lest's connect <ArrowRightCircle size={25} /></button>
+            <TrackVisibility>
+            {({ isVisible }) =>
+            <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+              <span className="tagline">Discover My Work !</span>
+              <h1>{`Welcome to my `}<span className="wrap">{text}</span></h1>
+              <p>Hello, I'm Jennifer, a web developer, and if you're here, it's to discover my work! If you like my work, you can contact me through the contact page.</p>
+              <button onClick={() => console.log('connect')}>Lest's connect <ArrowRightCircle size={25} /></button>
+            </div>}
+            </TrackVisibility>
           </Col>
           <Col xs={12} md={6} xl={7}>
             <img src={headerImg} alt="Header Img" />
