@@ -48,21 +48,27 @@ export const Banner = () => {
 
   return (
     <section className="banner" id="home">
-      <Container>
-        <Row className=" align-items-center">
-          <Col xs={12} md={6} xl={7}>
+      <Container  fluid className="banner">
+        <Row className="justify-content-center text-center mt-1" >
+          <Col xs={12} md={8} xl={6}>
             <TrackVisibility>
-            {({ isVisible }) =>
-            <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-              <span className="tagline">Discover My Work !</span>
-              <h1>{`Welcome to my `}<span className="wrap">{text}</span></h1>
-              <p>Hello, I'm Jennifer, a web developer, and if you're here, it's to discover my work! If you like my work, you can contact me through the contact page.</p>
-              <button onClick={() => console.log('connect')}>Lest's connect <ArrowRightCircle size={25} /></button>
-            </div>}
+              {({ isVisible }) =>
+              <div className={isVisible ? "animate__animated animate__bounceInLeft" : ""}>
+                <span className="tagline">Discover My Work !</span>
+              </div>}
             </TrackVisibility>
-          </Col>
-          <Col xs={12} md={6} xl={7}>
-            <img src={headerImg} alt="Header Img" />
+            <TrackVisibility>
+              {({ isVisible }) =>
+              <div className={isVisible ? "animate__animated animate__bounceInRight" : ""}>
+                <h1>Welcom to my portfolio</h1>
+              </div>}
+            </TrackVisibility>
+            <TrackVisibility>
+              {({ isVisible }) =>
+              <div className={isVisible ? "animate__animated animate__bounceInUp" : ""}>
+                <p>Hello, I'm Jennifer, a web developer, and if you're here, it's to discover my work! If you like my work, you can contact me through the contact page.</p>
+              </div>}
+            </TrackVisibility>
           </Col>
         </Row>
       </Container>

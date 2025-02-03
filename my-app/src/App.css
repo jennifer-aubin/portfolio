@@ -263,11 +263,21 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .banner {
   margin-top: 0;
-  padding: 260px 0 100px 0;
+  padding: 260px 0 95px 0;
   background-image: url('./assets/img/6.png');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centre verticalement */
+    align-items: center; /* Centre horizontalement */
+    text-align: center; /* Centre le texte */
+
+    padding-top: 90px;
+  
+  
 }
 
 .banner .tagline {
@@ -282,7 +292,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .banner h1 {
-  font-size: 65px;
+  font-size: 50px;
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1;
