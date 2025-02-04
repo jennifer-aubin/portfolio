@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from 'react-bootstrap';
 import { ArrowRightCircle } from 'react-bootstrap-icons';
- import headerImg from "../assets/img/rondblanc.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -48,7 +47,7 @@ export const Banner = () => {
 
   return (
     <section className="banner" id="home">
-      <Container  fluid className="banner">
+      <Container>
         <Row className="justify-content-center text-center mt-1" >
           <Col xs={12} md={8} xl={6}>
             <TrackVisibility>
