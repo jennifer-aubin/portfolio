@@ -1,4 +1,5 @@
-import image1 from "../assets/img/para.png";
+import image1 from "../assets/img/skill1.png";
+import image2 from "../assets/img/skill2.png";
 
 export const SliderCard = () => {
     return (
@@ -9,38 +10,43 @@ export const SliderCard = () => {
                         <img src={image1} alt="" />
                         <div className="overlay">
                             <h3>Développement Web (Frontend & Backend)</h3>
-                            <p>HTML / CSS
-                                            SCSS
-                                            JavaScript (ES6+)
-                                            React.js
-                                            Next.js
-                                            Ruby
-                                            Ruby on Rails
-                                            SQL
-                                            MongoDB
-                                            Prisma</p>
-                            <a href="#">rgfkjnaerikgiaergbaebrtgbn</a>
+                            
+                            
+                                <ul className="list1"> 
+                                    <li>HTML / CSS</li>
+                                    <li>SCSS</li>
+                                    <li>JavaScript</li>
+                                    <li>React.js</li>
+                                    <li>Next.js</li>
+                                    <li>Ruby</li>
+                                    <li>SQL</li>
+                                    <li>MongoDB</li>
+                                    <li>Prisma</li>
+                                </ul> 
                         </div>
                     </div>
                     <div className="box">
-                        <img src={image1} alt="" />
+                        <img src={image2} alt="" />
                         <div className="overlay">
                             <h3>Outils & Bibliothèques</h3>
-                            <p>NextAuth (authentification pour Next.js)
-                                    Cypress (tests end-to-end)
-                                    Shadcn (UI pour React)
-                                    Bootstrap
-                                    Tailwind CSS
-                                    GitHub</p>
-                            <a href="#">rgfkjnaerikgiaergbaebrtgbn</a>
+                                <ul className="list2"> 
+                                    <li>NextAuth</li>
+                                    <li>Cypress</li>
+                                    <li>Shadcn</li>
+                                    <li>Bootstrap</li>
+                                    <li>Tailwind CSS</li>
+                                    <li>GitHub</li>    
+                                </ul> 
                         </div>
                     </div>
                     <div className="box">
                         <img src={image1} alt="" />
                         <div className="overlay">
                             <h3>Outils de Design</h3>
-                            <p>Figma Canva</p>
-                            <a href="#">rgfkjnaerikgiaergbaebrtgbn</a>
+                                <ul className="list3">  
+                                    <li>Figma</li>
+                                    <li>Canva</li>  
+                                </ul>  
                         </div>
                     </div>
                 </div>

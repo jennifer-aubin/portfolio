@@ -616,9 +616,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 10px 10%;
 }
 
-#card-area {
-  padding: 50px 0;
-}
+
 
 .box-area {
   display: grid;
@@ -636,7 +634,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .box img {
-  width: 100%;
+  width: 200%;
   height: auto;
   border-radius: 10px;
   display: block;
@@ -676,7 +674,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 14px;
   background: #fff;
   border-radius: 50px;
-  text-align: center;
+  text-align: left;
   padding: 5px 15px;
 }
 
@@ -688,4 +686,48 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   height: 100%;
 }
 
+.list1 li::before{
+  content: "•";
+  font-size: 1.6em;
+  padding-right: 8px;
+  color: rgb(196, 122, 26);
+  
+}
+
+.list2 li::before{
+  content: "•";
+  font-size: 1.6em;
+  padding-right: 8px;
+  color: rgb(30, 84, 184);
+}
+
+.list3 li::before{
+  content: "•";
+  font-size: 1.6em;
+  padding-right: 8px;
+  color: rgb(128, 0, 122);
+}
+
+li{
+  list-style-type:none;
+  padding: 0;
+  margin: 0;
+}
+.list1 {
+  padding: 0;
+  padding-top: 50px;
+}
+
+.list2 {
+  padding: 0;
+  padding-top: 50px;
+}
+
+.list3 {
+  padding: 0;
+  padding-top: 50px;
+}
+.skill h2 {
+  text-shadow: 0 0 1em rgb(233, 19, 162), 0 0 0.2em rgb(209, 20, 193);
+}
 

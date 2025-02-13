@@ -34,8 +34,7 @@ export const Skills = () => {
                     <div className="skill-bx">
 
                         <h2>
-                            Skills
-                            
+                            Skills 
                         </h2>
                         <SliderCard />
                      
