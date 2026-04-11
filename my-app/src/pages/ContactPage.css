@@ -1,0 +1,112 @@
+.contact-page {
+  min-height: 100vh;
+  min-height: 100dvh;
+  margin: 0;
+  padding: clamp(1.5rem, 5vw, 2.5rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  background: linear-gradient(160deg, #fdf2f4 0%, #f1f5f9 45%, #e8eef5 100%);
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 26rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+}
+
+.contact-form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.contact-form-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #334155;
+}
+
+.contact-form-input,
+.contact-form-textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.65rem 0.75rem;
+  font-size: 1rem;
+  font-family: inherit;
+  line-height: 1.45;
+  color: #0f172a;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.5rem;
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.contact-form-textarea {
+  resize: vertical;
+  min-height: 8rem;
+}
+
+.contact-form-input:focus-visible,
+.contact-form-textarea:focus-visible {
+  outline: none;
+  border-color: #d6667c;
+  box-shadow: 0 0 0 3px rgba(214, 102, 124, 0.2);
+}
+
+.contact-form-submit {
+  margin-top: 0.25rem;
+  padding: 0.7rem 1.25rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  font-family: inherit;
+  color: #ffffff;
+  background: #d6667c;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    transform 0.15s ease;
+}
+
+.contact-form-submit:hover {
+  background: #c2556b;
+}
+
+.contact-form-submit:focus-visible {
+  outline: 2px solid #0f172a;
+  outline-offset: 2px;
+}
+
+.contact-form-submit:active {
+  transform: scale(0.98);
+}
+
+.contact-page-footer {
+  margin: 1.75rem 0 0;
+  text-align: center;
+}
+
+.contact-page-back {
+  font-size: 0.9rem;
+  color: #64748b;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.contact-page-back:hover {
+  color: #d6667c;
+}
+
+.contact-page-back:focus-visible {
+  outline: 2px solid #d6667c;
+  outline-offset: 3px;
+  border-radius: 2px;
+}

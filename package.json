@@ -1,0 +1,12 @@
+{
+  "name": "portfolio",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix my-app run dev",
+    "start": "npm --prefix my-app start",
+    "build": "npm --prefix my-app run build",
+    "test": "npm --prefix my-app test",
+    "eject": "npm --prefix my-app run eject",
+    "install:app": "npm install --prefix my-app"
+  }
+}

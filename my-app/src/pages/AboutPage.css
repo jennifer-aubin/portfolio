@@ -1,0 +1,55 @@
+.about-page {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.92);
+}
+
+.about-page-main {
+  flex: 1;
+  width: 100%;
+  max-width: 48rem;
+  margin: 0 auto;
+  padding: clamp(1.5rem, 4vw, 2.5rem) clamp(1.25rem, 4vw, 2rem);
+  padding-bottom: clamp(2.5rem, 6vw, 4rem);
+  box-sizing: border-box;
+}
+
+.about-page-title {
+  margin: 0 0 1.25rem;
+  font-size: clamp(1.35rem, 3.5vw, 1.75rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: #0f172a;
+}
+
+.about-page-body {
+  margin: 0;
+}
+
+.about-page-footer {
+  margin: 2rem 0 0;
+}
+
+.about-page-back {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #64748b;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.about-page-back:hover {
+  color: #d6667c;
+}
+
+.about-page-back:focus-visible {
+  outline: 2px solid #d6667c;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.about-page .app-section-about .app-section-subheading {
+  margin-top: 1.25rem;
+}

@@ -1,15 +1,16 @@
-import './App.css';
+import { Navigate, Route, Routes } from 'react-router-dom';
+import ContactPage from './pages/ContactPage';
+import HomePage from './pages/HomePage';
+// Page « À propos » : code conservé dans ./pages/AboutPage.jsx — pour réactiver, importer AboutPage
+// et remplacer la route ci-dessous par element={<AboutPage />}. Remettre aussi le lien dans Navbar.
 
 function App() {
   return (
-    <div className="app">
-      <main className="app-main">
-        <h1 className="app-title">Portfolio</h1>
-        <p className="app-lede">
-          Base prête — tu peux reconstruire le design et les sections ici.
-        </p>
-      </main>
-    </div>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/a-propos" element={<Navigate to="/" replace />} />
+      <Route path="/contact" element={<ContactPage />} />
+    </Routes>
   );
 }
 
