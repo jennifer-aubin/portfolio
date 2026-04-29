@@ -4,8 +4,9 @@ import './Navbar.css';
 
 const NAV_LINKS = [
   { to: '/', label: 'Home' },
-  { to: '/#projets', label: 'Projets' },
-  { to: '/contact', label: 'Contact' }
+  { to: '/#presentation', label: 'Qui suis-je ?' },
+  { to: '/#projets', label: 'Stack' },
+  { to: '/#contact', label: 'Contact' }
 ];
 
 export default function Navbar() {
@@ -13,6 +14,23 @@ export default function Navbar() {
   const menuId = useId();
 
   const close = useCallback(() => setOpen(false), []);
+  const handleNavClick = useCallback(
+    (e, to) => {
+      close();
+      if (!to.startsWith('/#')) return;
+      e.preventDefault();
+      const hash = to.slice(2);
+      const target = document.getElementById(hash);
+      if (!target) {
+        window.location.href = to;
+        return;
+      }
+      const y = target.getBoundingClientRect().top + window.scrollY - 90;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+      window.history.replaceState(null, '', to);
+    },
+    [close]
+  );
 
   useEffect(() => {
     if (!open) return;
@@ -31,7 +49,8 @@ export default function Navbar() {
     <header className="navbar">
       <div className="navbar-inner">
         <Link to="/" className="navbar-brand" onClick={close}>
-          Portfolio
+          <span className="navbar-brandTop">Aubin</span>
+          <span className="navbar-brandBottom">Jennifer</span>
         </Link>
 
         <button
@@ -58,7 +77,7 @@ export default function Navbar() {
             <ul className="navbar-list">
               {NAV_LINKS.map(({ to, label }) => (
                 <li key={to}>
-                  <Link className="navbar-link" to={to} onClick={close}>
+                  <Link className="navbar-link" to={to} onClick={(e) => handleNavClick(e, to)}>
                     {label}
                   </Link>
                 </li>
