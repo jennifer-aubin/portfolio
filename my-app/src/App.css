@@ -1243,6 +1243,19 @@ body::-webkit-scrollbar-thumb:hover {
   padding-bottom: clamp(4rem, 12vw, 6rem);
 }
 
+.app-footer {
+  position: relative;
+  z-index: 1;
+  padding: 1.2rem clamp(1.5rem, 5vw, 2.5rem);
+  text-align: center;
+  font-size: 0.9rem;
+  color: rgba(226, 232, 240, 0.82);
+  background: rgba(6, 8, 12, 0.55);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px) saturate(1.2);
+  -webkit-backdrop-filter: blur(14px) saturate(1.2);
+}
+
 .app-section-title {
   margin: 0 0 0.75rem;
   font-size: clamp(1.25rem, 3vw, 1.6rem);

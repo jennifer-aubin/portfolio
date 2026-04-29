@@ -772,6 +772,10 @@ export default function HomePage() {
         </div>
       </section>
 
+      <footer className="app-footer" role="contentinfo">
+        © 2026 Aubin Jennifer – Tous droits réservés
+      </footer>
+
       {showBackToTop ? (
         <button
           type="button"
